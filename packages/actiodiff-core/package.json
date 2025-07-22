@@ -1,0 +1,18 @@
+{
+  "name": "@actiodiff/core",
+  "version": "0.1.0",
+  "description": "Core library for the ActioDiff multi-agent interaction format",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@sentiodiff/core": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  },
+  "license": "AGPL-3.0"
+}

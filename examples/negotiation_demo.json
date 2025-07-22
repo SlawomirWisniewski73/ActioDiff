@@ -1,0 +1,99 @@
+{
+  "version": "1.0-actio",
+  "interaction": {
+    "type": "negotiation",
+    "protocol": "offer_counteroffer_accept_reject",
+    "participants": [
+      "ai_buyer_7",
+      "ai_seller_4"
+    ]
+  },
+  "agents": [
+    {
+      "id": "ai_buyer_7",
+      "goalModel": {
+        "objective": "acquire_item_X_at_minimum_cost",
+        "constraints": [
+          "max_budget: 85",
+          "time_limit: 10_steps"
+        ]
+      },
+      "sentioState": {
+        "version": "0.1",
+        "tracks": [],
+        "introspection": {
+          "selfModel": {
+            "modelName": "BuyerBot 7",
+            "version": "2.1",
+            "selfAssessment": {
+              "confidence": "high",
+              "strategy": "start_low"
+            }
+          },
+          "traces": [
+            {
+              "id": "decision_trace_buyer",
+              "steps": [
+                {
+                  "step": 1,
+                  "description": "Analyzing seller's initial offer of 100."
+                },
+                {
+                  "step": 2,
+                  "description": "Calculated counter-offer of 80 based on budget constraint and 'start_low' strategy."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ai_seller_4",
+      "goalModel": {
+        "objective": "sell_item_X_at_maximum_profit",
+        "constraints": [
+          "min_price: 75"
+        ]
+      },
+      "sentioState": {
+        "version": "0.1",
+        "tracks": [],
+        "introspection": {
+          "selfModel": {
+            "modelName": "SellerBot 4",
+            "version": "1.8",
+            "selfAssessment": {
+              "patience": "medium"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "timeline": [
+    {
+      "time": 1,
+      "actorId": "ai_seller_4",
+      "action": "offer",
+      "payload": {
+        "item": "item_X",
+        "price": 100
+      }
+    },
+    {
+      "time": 2,
+      "actorId": "ai_buyer_7",
+      "action": "counter_offer",
+      "payload": {
+        "price": 80
+      }
+    },
+    {
+      "time": 3,
+      "actorId": "ai_seller_4",
+      "action": "accept",
+      "payload": {}
+    }
+  ]
+}

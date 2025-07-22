@@ -12,7 +12,7 @@ ActioDiff introduces a new layer of abstraction on top of single-agent introspec
 2.  **Interaction Layer (`interaction`)**: Defines the "rules of the game." It specifies the type of interaction (e.g., negotiation, collaboration) and the protocol governing the agents' exchanges.
 3.  **Prediction Layer (Hypothetical Timelines)**: Allows an agent to model and store potential future outcomes of its actions, offering an unprecedented view into its planning and decision-making processes.
 
-## Repository Structure (Monorepo)
+## Repository Structure (Monorepo) 
 
 This repository is a TypeScript monorepo containing the core components of the ActioDiff ecosystem:
 

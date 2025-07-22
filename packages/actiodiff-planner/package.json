@@ -1,7 +1,7 @@
 {
-  "name": "@actiodiff/core",
+  "name": "@actiodiff/planner",
   "version": "0.1.0",
-  "description": "Core library for the ActioDiff multi-agent interaction format",
+  "description": "Prediction and hypothetical timeline generation for ActioDiff",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -9,7 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "dependencies": {
-    "@sentiodiff/core": "github:SlawomirWisniewski73/SentioDiff"
+    "@actiodiff/core": "^0.1.0",
+    "@actiodiff/protocols": "^0.1.0"
   },
   "devDependencies": {
     "typescript": "^5.3.0"

@@ -1,7 +1,7 @@
-
 # ActioDiff: A Meta-Language for Multi-Agent Interaction and Intent
 
-**ActioDiff is a conceptual, JSON-based meta-language for describing, simulating, and analyzing interactions between intelligent agents (AI or human).** It extends the principles of `VectorDiff` (dynamic data) and `SentioDiff` (AI introspection) into the realm of multi-agent systems, focusing on goals, intent, and protocols of interaction.
+**ActioDiff is a conceptual, JSON-based meta-language for describing, simulating, and analyzing interactions between intelligent agents (AI or human).** 
+It extends the principles of `VectorDiff` (dynamic data) and `SentioDiff` (AI introspection) into the realm of multi-agent systems, focusing on goals, intent, and protocols of interaction.
 
 Where `VectorDiff` answers *"How does it change?"* and `SentioDiff` answers *"What is it and what does it think?"*, `ActioDiff` answers the ultimate question: ***"Why do they interact and what are their goals?"***
 
@@ -13,7 +13,7 @@ ActioDiff introduces a new layer of abstraction on top of single-agent introspec
 2.  **Interaction Layer (`interaction`)**: Defines the "rules of the game." It specifies the type of interaction (e.g., negotiation, collaboration) and the protocol governing the agents' exchanges.
 3.  **Prediction Layer (Hypothetical Timelines)**: Allows an agent to model and store potential future outcomes of its actions, offering an unprecedented view into its planning and decision-making processes.
 
-## Repository Structure (Monorepo)
+## Repository Structure (Monorepo)  
 
 This repository is a TypeScript monorepo containing the core components of the ActioDiff ecosystem:
 
@@ -30,5 +30,6 @@ This repository is a TypeScript monorepo containing the core components of the A
 4.  **Analyze**: Use the resulting `ActioDiffDocument` to visualize, analyze, and understand the dynamics of the multi-agent system.
 
 See a concrete example in `examples/negotiation_demo.json`.
+
 
 ---

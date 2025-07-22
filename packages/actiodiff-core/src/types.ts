@@ -1,22 +1,22 @@
-// Importujemy typy z SentioDiff, ponieważ ActioDiff go rozszerza
-import { SentioDiffDocument, IntrospectionData } from '@sentiodiff/core';
+// Importujemy poprawny, istniejący typ 'SentioData' z biblioteki SentioDiff
+import { SentioData } from '@sentiodiff/core';
 
 /**
  * Definiuje cele i ograniczenia agenta.
  */
 export interface GoalModel {
-  objective: string; // np. "maximize_profit", "answer_user_question"
-  constraints?: string[]; // np. ["ethical_guidelines_v2", "budget_limit_1000"]
-  utilityFunction?: string; // Formalny opis funkcji użyteczności
+  objective: string;
+  constraints?: string[];
+  utilityFunction?: string;
 }
 
 /**
  * Opisuje pojedynczego agenta w ramach interakcji.
- * Zawiera jego pełny opis SentioDiff oraz jego model celów.
+ * Używamy teraz poprawnego typu 'SentioData' dla stanu agenta.
  */
 export interface Agent {
-  id: string; // Identyfikator agenta w ramach tej interakcji
-  sentioState: SentioDiffDocument;
+  id: string;
+  sentioState: SentioData;
   goalModel: GoalModel;
 }
 
@@ -24,9 +24,9 @@ export interface Agent {
  * Definiuje "zasady gry" dla interakcji.
  */
 export interface Interaction {
-  type: string; // np. "negotiation", "collaboration", "auction"
-  protocol: string; // np. "offer_counteroffer_accept"
-  participants: string[]; // Tablica ID agentów biorących udział
+  type: string;
+  protocol: string;
+  participants: string[];
 }
 
 /**
@@ -34,9 +34,9 @@ export interface Interaction {
  */
 export interface TimelineEvent {
   time: number;
-  actorId: string; // ID agenta, który wykonuje akcję
-  action: string; // np. "offer", "accept", "query"
-  payload?: Record<string, any>; // Dane związane z akcją, np. { "price": 100 }
+  actorId: string;
+  action: string;
+  payload?: Record<string, any>;
 }
 
 /**
@@ -47,6 +47,5 @@ export interface ActioDiffDocument {
   interaction: Interaction;
   agents: Agent[];
   timeline: TimelineEvent[];
-  // W przyszłości można dodać hipotetyczne linie czasu
   hypotheticalTimelines?: any[]; 
 }

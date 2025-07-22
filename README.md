@@ -1,6 +1,7 @@
 # ActioDiff: A Meta-Language for Multi-Agent Interaction and Intent
 
-**ActioDiff is a conceptual, JSON-based meta-language for describing, simulating, and analyzing interactions between intelligent agents (AI or human).** It extends the principles of `VectorDiff` (dynamic data) and `SentioDiff` (AI introspection) into the realm of multi-agent systems, focusing on goals, intent, and protocols of interaction.
+**ActioDiff is a conceptual, JSON-based meta-language for describing, simulating, and analyzing interactions between intelligent agents (AI or human).** 
+It extends the principles of `VectorDiff` (dynamic data) and `SentioDiff` (AI introspection) into the realm of multi-agent systems, focusing on goals, intent, and protocols of interaction.
 
 Where `VectorDiff` answers *"How does it change?"* and `SentioDiff` answers *"What is it and what does it think?"*, `ActioDiff` answers the ultimate question: ***"Why do they interact and what are their goals?"***
 

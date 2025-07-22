@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "dependencies": {
-    "@sentiodiff/core": "^0.1.0"
+    "@sentiodiff/core": "github:SlawomirWisniewski73/SentioDiff"
   },
   "devDependencies": {
     "typescript": "^5.3.0"

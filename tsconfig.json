@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@actiodiff/core": ["packages/actiodiff-core/src"],
+      "@actiodiff/protocols": ["packages/actiodiff-protocols/src"],
+      "@actiodiff/planner": ["packages/actiodiff-planner/src"],
+      "@actiodiff/viz": ["packages/actiodiff-viz/src"]
+    }
+  }
+}
